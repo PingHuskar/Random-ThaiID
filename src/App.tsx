@@ -36,7 +36,7 @@ function App() {
                        + gen3 * 3
                        + gen2 * 2
     const mod11sum1: number = sum1 % 11
-    const gen1: number = 11 - mod11sum1
+    const gen1: number = (11 - mod11sum1) % 10
     localStorage.setItem(`id`, `${gen13}${gen12}${gen11}${gen10}${gen9}${gen8}${gen7}${gen6}${gen5}${gen4}${gen3}${gen2}${gen1}`)
     toast(`Gen Complete`)
     setId(localStorage.getItem(`id`)?.toString() || '')

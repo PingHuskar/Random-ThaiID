@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <h1>Random ThaiID</h1>
-      <Link to={`https://github.com/PingHuskar/Random-ThaiID/README.md`} target={`_blank`}>README</Link>
+      <Link to={`https://github.com/PingHuskar/Random-ThaiID/#readme`} target={`_blank`}>README</Link>
       <div className="output" title='Click To Copy' onClick={(e) => {
         e.preventDefault()
         navigator.clipboard.writeText(e.currentTarget.innerText)
